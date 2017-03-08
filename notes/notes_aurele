@@ -1,0 +1,48 @@
+================================================================================
+
+Edge-Centric Computing : Vision and Challenges
+
+Need for a new shift towards decentralization.
+Social computing.
+Lack of trust in centralized systems.
+2 waves. edge : lots of individual machines.
+         core : cloud
+
+Problems with centralization:
+	 loss of privacy
+	 requires trust
+	 unused personal devices (lots of computing power)
+
+Proposition : keep data centers and cloud at the core.
+But around it, smaller web servers : next layer.
+Edge : individual human-controlled devices (computers, tablets, routers).
+
+In edge computing:
+proximity in the edge: (P2P, CDNs)
+intelligence in the edge: autonomous decision making
+trust in the edge: personal data stays in the edge
+control in the edge: management of applications comes from the edge
+humans in the edge: users have control on their information
+
+Combine P2P and cloud. Cloud could provide stable data when necessary.
+[10] confirms the performance of such hybrid systems.
+peer ressources to build nano datacenters.
+
+Fog Computing. Same but less focused on human-driven applications controlled from the edge.
+
+including humans in data-analysis loops. Users acting as sensors. How to respect user privacy in this case.
+The answer of edge-centric cloud computing is to not aggegate the datas.
+
+Find correct tradeoff between mobile terminals and cloud servers.
+Interconnects several clouds.
+Difference for privacy : we can assume that the edge can be trusted.
+Scalability must still be dealt with. However, the cloud provides more stable data.
+
+You could decide which data is accessible to third party applications.
+Trust in users may establish links between them...
+Users won't have to deal with system administration.
+Compromised servers may not induce leak of private data.
+Geographical proximity may play a role.
+Support for mobility.
+
+================================================================================
