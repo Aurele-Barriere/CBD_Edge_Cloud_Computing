@@ -46,3 +46,38 @@ Geographical proximity may play a role.
 Support for mobility.
 
 ================================================================================
+
+Edge computing: Vision and Challenges
+
+Processing the data at the edge of the network.
+IoT.
+Large data, fast response-time needed, private data. Cloud might not be sufficient.
+
+Data is more and more produced at the edge. Thus, more efficient to process at the edge. Cloud computing is not efficient for these systems.
+
+When large data is produced at the edge, speed of data transportation becomes the bottleneck. Example of Boeing. Cloud introduces long response-time, regardless of the computing power of the cloud.
+
+So much data by IoT that it must be consumed at the edge wwithout being sent to the cloud. Cloud not suited for IoT.
+Processing in the edge also protects privacy (health sensors).
+Difference with fog computing : focus more on the things, less on the infrastructure.
+
+We could cache data and operations on the data at the edge.
+Example: online shopping. Cart manipulation should be done at the edge. Less latency. Synchronization with the cloud happens in the background, without introducing latency.
+
+Moving between edges -> caching in multiple edges.
+
+Example: fast video analysis. Missing child.
+Examples: smart home. smart city. hospitals.
+
+Harder to write applications that run on heterogeneous platforms.
+Proposition: computing stream. serial of functions to be applied to the data.
+We would also need a naming convention. IP could be too heavy.
+Human involvment should be minimized.
+Isolation issue.
+Maintain topology to have failure detection.
+
+Filtering data (errors). Critical analysis.
+
+Workload allocation. Which layer should work? Define metrics. For instance Latency, Bandwidth, Energy, Cost.
+
+================================================================================
