@@ -81,3 +81,23 @@ Filtering data (errors). Critical analysis.
 Workload allocation. Which layer should work? Define metrics. For instance Latency, Bandwidth, Energy, Cost.
 
 ================================================================================
+
+Bringing the Cloud to the Edge
+
+Service nodes placed at the cloud's edge.
+Two trends : cloud and mobile computing.
+IoT.
+Huge data created at the edge.
+Cloud backend needed for performance, but low latency needed for some applications.
+Split cloud application architecture.
+Local networks where the users are.
+In case of failure/miss, go back to the centralized servers.
+Edge Zones (potentially NATed)  (mobility?)
+Edge Apps designed to be deployed both in the cloud and at the edges.
+Edge cloud implementation on top of OpenStack. IaaS.
+Example: 3D indoor ocalization. Needs computation power. Local.
+Experiments results.
+Other Example: Video Surveillance. Bandwidth optimization.
+Different from Nanodatacenters and cloudlets where they bring the cloud to the edges.
+
+================================================================================
