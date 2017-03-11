@@ -101,3 +101,22 @@ Other Example: Video Surveillance. Bandwidth optimization.
 Different from Nanodatacenters and cloudlets where they bring the cloud to the edges.
 
 ================================================================================
+
+A hybrid edge-cloud architecture for reducing on-demand gaming latency
+
+We want cloud to be useful in low-latency situations (such as multimedia applications).
+Cloud alone does not work in interactive applications. They require specialized hardware (GPU).
+Focus on on-demand gaming.
+Compute remotely then sends a video stream.
+Some datacenters can already provide low-latency streams. But the user coverage is not complete.
+We could add edge servers to greatly increase user coverage. But they have physical limitations.
+Other games/applications can tolerate more latency.
+Hard to estimate peak number of players.
+Try to optimize parameters to have lowest latency or better coverage. Game placement uses game popularity.
+Edge-only deployment requires too much edge sites and edge servers.
+-> Towards hybrid infrastructure.
+Facility location problem (NP hard).
+Various heuristics.
+Voting based is more efficient for game placement.
+
+================================================================================
