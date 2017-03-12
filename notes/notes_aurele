@@ -120,3 +120,33 @@ Various heuristics.
 Voting based is more efficient for game placement.
 
 ================================================================================
+
+Fog Computing: A Platform for Internet of Things and Analytics
+
+There are several advantages for aggregating in big data-centers.
+Issues:
+Low-latency applications,
+Geo-distributed (environment monitoring),
+Fast mobile applications (smart vehicles),
+3/4 billions of end points. Humans behind them.
+
+Use case: Smart Traffic Light System
+Local latency.
+Orchestration platform.
+Communicates with the Cloud data to be analyzed.
+
+Use case: Wind Farm
+Real-time analytics and batch analytics.
+Interactions sensors/actuators.
+
+Geo-distribution calls for computation at the edge.
+Cooperation between Edge and Core. Analytics can be made on different ranges of time : from milliseconds to month.
+
+Several tenants. More heterogeneous. -> Fog abstraction layer to hide platform heterogeneity.
+Monitors ressource utilisation. Virtualization.
+
+Foglets agents to monitor every node.
+Distributed database.
+Policy-based service orchestration.
+
+================================================================================
