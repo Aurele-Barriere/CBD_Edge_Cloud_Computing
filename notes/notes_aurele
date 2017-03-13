@@ -72,7 +72,7 @@ Examples: smart home. smart city. hospitals.
 Harder to write applications that run on heterogeneous platforms.
 Proposition: computing stream. serial of functions to be applied to the data.
 We would also need a naming convention. IP could be too heavy.
-Human involvment should be minimized.
+Human involvement should be minimized.
 Isolation issue.
 Maintain topology to have failure detection.
 
@@ -95,7 +95,7 @@ In case of failure/miss, go back to the centralized servers.
 Edge Zones (potentially NATed)  (mobility?)
 Edge Apps designed to be deployed both in the cloud and at the edges.
 Edge cloud implementation on top of OpenStack. IaaS.
-Example: 3D indoor ocalization. Needs computation power. Local.
+Example: 3D indoor localization. Needs computation power. Local.
 Experiments results.
 Other Example: Video Surveillance. Bandwidth optimization.
 Different from Nanodatacenters and cloudlets where they bring the cloud to the edges.
