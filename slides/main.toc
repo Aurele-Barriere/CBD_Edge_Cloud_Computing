@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {french}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Edge computing challenges}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Internet of Things and Limits of the clouds}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Bringing the cloud to the Edge: an hybrid system}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{Challenges}{6}{0}{2}
+\beamer@sectionintoc {3}{Current research studies}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{Architecture}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{Workload Distribution}{10}{0}{3}
+\beamer@subsectionintoc {3}{3}{Problem Identification and Heuristics}{10}{0}{3}
+\beamer@subsectionintoc {3}{4}{Programmability}{10}{0}{3}
+\beamer@subsectionintoc {3}{5}{Naming}{10}{0}{3}
+\beamer@sectionintoc {4}{Case example: a traffic light}{10}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{10}{0}{5}
