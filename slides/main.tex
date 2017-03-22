@@ -2,6 +2,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[frenchb]{babel}
+\usepackage{graphicx}
 
 \begin{document}
 \title{Edge Cloud Computing}
@@ -27,16 +28,21 @@
   
   
 \section{Edge computing challenges}
-\subsection{Internet of Things and Limits of the clouds}
+\subsection{A new model will be needed}
 \begin{frame}
-  \frametitle{Internet of Things and Limits of the clouds}
-  Evolution of the number of connected objects
-  
-	\begin{alertblock}{Problem}
-			The network can't handle the workload and the communication.
-	\end{alertblock}
-        \begin{alertblock}{Problem}
-			The Cloud often introduces too much latency.
+  \frametitle{\subsecname}
+  \begin{block}{Internet of things}
+    Growth of the number of connected objects and sensors that generate data.
+    The end nodes are evolving from consumers to producers.
+    
+    Estimated produced data by 2019: 500 zettabytes (estimate by Cisco Global Cloud Index).
+  \end{alertblock}
+	\begin{alertblock}{Limits of the clouds}
+          \begin{itemize}
+          \item The network can't handle that much.\\
+              Estimated IP traffic by 2019: 10.4 zettabytes.
+	    \item For many uses (multimedia for instance), the Cloud introduces too much latency.
+          \end{itemize}
 	\end{alertblock}
 
 \end{frame}
@@ -45,13 +51,27 @@
 \begin{frame}
   \frametitle{Edge computing}
   \framesubtitle{Principle}
-  Computing on the end-node of the network (the "things")\\
-  -> \emph{Edge} of the network
+
+  \begin{block}{Computing in the Edge}
+    Increase in the nodes' computing power as well (smartphones, embedded devices).
+  \end{block}
+   We want to put computing at the proximity of data sources: at the Edge.
+  
+
 \end{frame}
 
 \begin{frame}
   \frametitle{Edge-Cloud computing}
   \framesubtitle{An hybrid system}
+
+  \begin{figure}
+    \center
+    \includegraphics[scale=0.5]{edge.png}  %I'm not a big fan of this graphic. might have to change it.
+  \end{figure}
+
+  Keep using the Cloud (core), but add computation at the Edge.
+  The Cloud keeps providing global services, but edge servers can compute with lower latency.
+  
 \end{frame}
 
 \subsection{Challenges}
@@ -115,6 +135,10 @@
 \begin{frame}
   \frametitle{Current Research}
   \framesubtitle{Problem Identification and Heuristics}
+  \begin{exampleblock}{On-demand gaming coverage} % [4]
+    We need a low-latency service that can satisfy the most people.\\
+    We need heuristics for edge servers deployment.
+  \end{exampleblock}
 \end{frame}
 \subsection{Programmability}
 \begin{frame}
