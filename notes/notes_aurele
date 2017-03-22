@@ -150,3 +150,45 @@ Distributed database.
 Policy-based service orchestration.
 
 ================================================================================
+
+
+Examples:
+
+online shopping -> centralizing and low-latency
+fast video analysis -> parallelization as soon as the data is produced for fast response
+Missing child -> same
+smart home -> too much produced data
+smart city -> large data quantity, low latency and location awareness
+hospitals -> we need global information, but also privacy so we can't send everything
+3D indoor localization -> we need local storage
+Video Surveillance -> we need local compression
+Smart Traffic Light System -> different time scales
+Wind Farm -> different time scale and locality
+on-demand gaming -> when we want a better coverage for low latency services
+
+
+
+================================================================================
+
+
+Definitions:
+
+A. Edge Networks and Edge Cloud
+Edge network refers to the part of the Internet to which end
+users directly connect (e.g., home/enterprise networks or WiFi
+hotspots). Edge node refers to the compute or storage node
+attached to the edge network and federated to the data center
+cloud. Edge nodes in the same edge network are grouped
+together to form an Edge Zone. All nodes in the same edge
+zone are assumed to be part of the same, potentially NATed,
+network address space managed by the edge owner.
+The Edge Cloud is the federation of the data center nodes
+along with all the edge zones. The Edge Cloud operator is
+assumed to have a pre-existing, traditional IaaS data center
+cloud. By adding Edge Cloud functionality, the Edge Cloud
+operator can now extend the cloud’s capabilities to deploy
+applications at the edge networks. Fig. 1 shows the presence
+of the various edge zones in the Edge Cloud.
+
+[3]
+

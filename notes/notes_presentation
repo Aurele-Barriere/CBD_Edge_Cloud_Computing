@@ -25,3 +25,18 @@ General issues:
 	economic model
 
 Conclusion
+
+
+
+--------
+
+Nothing yet on trust and privacy?
+
+when does it work?
+ - when we need centralized analysis and low latency
+ - when communication from the edge to the core is the bottleneck but data could be consumed at the edge
+ - when there's mobility and locality involved. location awareness can be used to minimize communications
+ - when some data cannot be shared publicly (lack of trust)
+ - when some data needs to be stored locally
+ - when we want a better coverage for low-latency services
+ - when we need to analyze data at different time scales

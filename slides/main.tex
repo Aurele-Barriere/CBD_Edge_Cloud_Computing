@@ -36,12 +36,14 @@
     The end nodes are evolving from consumers to producers.
     
     Estimated produced data by 2019: 500 zettabytes (estimate by Cisco Global Cloud Index).
-  \end{alertblock}
+  \end{block}
 	\begin{alertblock}{Limits of the clouds}
           \begin{itemize}
           \item The network can't handle that much.\\
               Estimated IP traffic by 2019: 10.4 zettabytes.
-	    \item For many uses (multimedia for instance), the Cloud introduces too much latency.
+            \item The Cloud's computation power can't handle that much.
+	    \item For many uses, the Cloud introduces too much latency.
+            \item Centralization brings privacy issues.
           \end{itemize}
 	\end{alertblock}
 
@@ -56,7 +58,12 @@
     Increase in the nodes' computing power as well (smartphones, embedded devices).
   \end{block}
    We want to put computing at the proximity of data sources: at the Edge.
+
+   It could either be in the nodes themselves, or in smaller edge servers. We can use already existing CDNs to put such servers.
   
+   \begin{exampleblock}{Example: Smart Home}
+     In a smart home, the data produced by every sensor could be consumed directly without sending it to a datacenter.
+   \end{exampleblock}
 
 \end{frame}
 
@@ -64,14 +71,30 @@
   \frametitle{Edge-Cloud computing}
   \framesubtitle{An hybrid system}
 
-  \begin{figure}
-    \center
-    \includegraphics[scale=0.5]{edge.png}  %I'm not a big fan of this graphic. might have to change it.
-  \end{figure}
-
+%  \begin{figure}
+%    \center
+%    \includegraphics[scale=0.5]{edge.png}  %I'm not a big fan of this graphic. might have to change it.
+%  \end{figure}
+%
   Keep using the Cloud (core), but add computation at the Edge.
   The Cloud keeps providing global services, but edge servers can compute with lower latency.
+
+  We can then use advantages from both the Cloud and the Edge.
   
+  \begin{exampleblock}{Example: Online Shopping}
+    We want fast browsing, although synchonization with a global server is needed.
+  \end{exampleblock}
+
+  In this example, cloud synchronization could be done in background.
+  
+\end{frame}
+
+\begin{frame}
+\frametitle{Edge-Cloud Computing}
+\framesubtitle{Overview}
+
+ADD SCHEMA
+
 \end{frame}
 
 \subsection{Challenges}
@@ -125,6 +148,11 @@
 \begin{frame}
   \frametitle{Current Research}
   \framesubtitle{Architecture}
+
+  Edge-cloud computing requires new connections between users, edge nodes, edge networks, datacenters...
+
+  
+
 \end{frame}
 \subsection{Workload Distribution}
 \begin{frame}
@@ -159,10 +187,39 @@
 \section{Conclusion}
 \begin{frame}
   \frametitle{Conclusion}
-  Hybrid system needed.
-  No cure-all solution.
+
+  \begin{block}{An hybrid system is needed}
+    For some applications, neither cloud-only nor edge-only systems are sufficient.
+  \end{block}
   
-  What about the economical aspect ?
+  \begin{alertblock}{Not a perfect solution}
+    In the case of coverage, any reasonnable number of edge servers still let some users without service for now.
+  \end{alertblock}
+  
+  \begin{alertblock}{There's still a lot of work left}
+    \begin{itemize}
+      \item Lots of open issues
+      \item No economical model
+    \end{itemize}
+  \end{alertblock}
+
   
 \end{frame}
+
+
+\begin{frame}{When should we use Edge-Cloud Computing?}
+% where should we put this?
+\begin{itemize}
+\item When we need centralized data and low latency (online shopping)
+\item When communication from the edge to the core is the bottleneck (Fast video analysis, smart home, smart city)
+\item When we can reduce the time of computation by spreading it on the Edge (Video surveillance, missing child)
+\item When locality is involved (wind farm, smart city)
+\item When some data cannot be shared publicly (hospitals)
+\item When some data needs to be stored locally (3D indoor localization)
+\item When we want a better coverage for low-latency services (on-demand gaming and multimedia)
+\item When we need to analyze data at different time scales (Smart Traffic Light System, wind farm). 
+\end{itemize}
+\end{frame}
+
+
 \end{document}
