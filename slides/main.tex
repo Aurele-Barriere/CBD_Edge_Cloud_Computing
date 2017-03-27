@@ -6,6 +6,7 @@
 
 \begin{document}
 \title{Edge Cloud Computing}
+\subtitle{CBD}
 \author{Aurèle BARRIÈRE & Solène MIRLIAZ}
 
 \begin{frame}[plain]
@@ -143,48 +144,155 @@ ADD SCHEMA
   
 \end{frame}
 
-\section{Current research studies}
-\subsection{Architecture}
-\begin{frame}
-  \frametitle{Current Research}
-  \framesubtitle{Architecture}
+% \section{Current research studies}
+% \subsection{Architecture}
+% \begin{frame}
+%   \frametitle{Current Research}
+%   \framesubtitle{Architecture}
+% 
+%   Edge-cloud computing requires new connections between users, edge nodes, edge networks, datacenters...
+% 
+%   
+% 
+% \end{frame}
+% \subsection{Workload Distribution}
+% \begin{frame}
+%   \frametitle{Current Research}
+%   \framesubtitle{Workload Distribution}
+% \end{frame}
+% \subsection{Problem Identification and Heuristics}
+% \begin{frame}
+%   \frametitle{Current Research}
+%   \framesubtitle{Problem Identification and Heuristics}
+%   \begin{exampleblock}{On-demand gaming coverage} % [4]
+%     We need a low-latency service that can satisfy the most people.\\
+%     We need heuristics for edge servers deployment.
+%   \end{exampleblock}
+% \end{frame}
+% \subsection{Programmability}
+% \begin{frame}
+%   \frametitle{Current Research}
+%   \framesubtitle{Programmability}
+% \end{frame}
+% \subsection{Naming}
+% \begin{frame}
+%   \frametitle{Current Research}
+%   \framesubtitle{Naming}
+% \end{frame}
+% 
+% \section{Case example: a traffic light}
+% \begin{frame}
+%   \frametitle{Case Example}
+%   \framesubtitle{Smart Traffic Light}
+% \end{frame}
 
-  Edge-cloud computing requires new connections between users, edge nodes, edge networks, datacenters...
 
-  
+\section{Use Cases}
 
-\end{frame}
-\subsection{Workload Distribution}
 \begin{frame}
-  \frametitle{Current Research}
-  \framesubtitle{Workload Distribution}
-\end{frame}
-\subsection{Problem Identification and Heuristics}
-\begin{frame}
-  \frametitle{Current Research}
-  \framesubtitle{Problem Identification and Heuristics}
-  \begin{exampleblock}{On-demand gaming coverage} % [4]
-    We need a low-latency service that can satisfy the most people.\\
-    We need heuristics for edge servers deployment.
+  \frametitle{Use Cases}
+  \framesubtitle{And Research interests}
+
+  \begin{block}{}
+    In which cases is Edge-Cloud Computing more efficient than Cloud-only or Edge-only approaches?
+  \end{block}
+
+  \begin{exampleblock}{Exploiting locality}
+    Some applications require local data only.\\
+    For instance, indoor 3D localization.
   \end{exampleblock}
-\end{frame}
-\subsection{Programmability}
-\begin{frame}
-  \frametitle{Current Research}
-  \framesubtitle{Programmability}
-\end{frame}
-\subsection{Naming}
-\begin{frame}
-  \frametitle{Current Research}
-  \framesubtitle{Naming}
+  
 \end{frame}
 
-\section{Case example: a traffic light}
+
+
+\subsection{Reducing the network usage}
 \begin{frame}
-  \frametitle{Case Example}
-  \framesubtitle{Smart Traffic Light}
+  \frametitle{\secname}
+  \framesubtitle{\subsecname}
+
+  With the Internet of Things, and in general the huge increase in produced data, we can't assume that our network could handle that much.
+
+  \begin{exampleblock}{Smart Cities, Smart Homes}
+    A lot of the produced data could be consumed locally. We could still use centralization (EXAMPLE)
+  \end{exampleblock}
+  
 \end{frame}
+
+
+\subsection{Analyzing data at different time scales}
+\begin{frame}
+  \frametitle{\secname}
+  \framesubtitle{\subsecname}
+
+  \begin{exampleblock}{Online Shopping}
+    We need a responsive user interface. We want centralized data.
+  \end{exampleblock}
+
+  \begin{exampleblock}{Smart Traffic Light System}
+    We want centralized data to regulate traffic on a large scale.\\
+    We want low-latency response when dealing with local events (EXAMPLE).
+  \end{exampleblock}
+  
+\end{frame}
+
+\subsection{Reduce the workload in the Cloud}
+\begin{frame}
+  \frametitle{\secname}
+  \framesubtitle{\subsecname}
+
+  \begin{exampleblock}{Video Surveillance}
+    For instance, to find a missing child, we need fast video analysis.\\
+    Exploits locality.
+  \end{exampleblock}
+
+  \begin{alertblock}{Programmability}
+    If we want our application to run on nodes, edge servers, could datacenters...\\
+    We need a suitable API.
+  \end{alertblock}
+
+  \begin{alertblock}{Workload Distribution}
+    We are using heterogeneous and mobile ressources for computation.
+  \end{alertblock}
+  
+\end{frame}
+
+
+\subsection{Better coverage for low-latency applications}
+\begin{frame}
+  \frametitle{\secname}
+  \framesubtitle{\subsecname}
+
+  \begin{exampleblock}{On-demand Gaming}
+    The service needs low-latency. Cloud servers could only cover less than 75\% of the US population.
+  \end{exampleblock}
+
+  \begin{alertblock}{Heuristics for a better coverage}
+    We need the most efficient way to put edge servers.
+  \end{alertblock}
+  
+\end{frame}
+
+
+
+\begin{frame}{Other Research studies} % I don't really like this name. any suggestion?
+  
+  \begin{alertblock}{Privacy}
+    Some data cannot be sent to anyone (Electronic Medical Records).
+  \end{alertblock}
+
+  \begin{alertblock}{Naming Conventions}
+    IP protocol isn't suited for the mobility of end nodes devices.
+  \end{alertblock}
+
+  % WARNING: I should read more about these two issues. I don't want to say anything stupid
+  
+\end{frame}
+
+
+
 \section{Conclusion}
+
 \begin{frame}
   \frametitle{Conclusion}
 

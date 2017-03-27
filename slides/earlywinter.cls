@@ -121,7 +121,7 @@
   }
 
   {\large\color{gray}
-  \textsc{Sous-titre}
+  \textsc{\insertsubtitle}
   }
   \vspace{5pt}
 
