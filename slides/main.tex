@@ -55,10 +55,11 @@
 	\frametitle{\secname}
   \framesubtitle{Fog model}
   \begin{center}
-    \includegraphics[width=0.7\linewidth]{fog.eps}
+    \includegraphics[width=0.6\linewidth]{fog.eps}
   \end{center}
   \begin{block}{Principle}
-    More little clouds, closer to the devices $\to$ Spread the ressources
+    More little clouds, closer to the devices $\to$ Spread the ressources\\
+    Lower latency
   \end{block}
 \end{frame}
 \begin{frame}
@@ -123,7 +124,13 @@
 \frametitle{Edge-Cloud Computing}
 \framesubtitle{Overview}
 
-ADD SCHEMA
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{edgePrinciple.eps}
+  \end{center}
+  
+  \begin{alertblock}{Hybrid System}
+    No suppression of the cloud
+  \end{alertblock}
 
 \end{frame}
 
@@ -132,45 +139,31 @@ ADD SCHEMA
 % the challenges and research interests are almost the same to me
 
 \begin{frame}
-  \frametitle{Challenges}
-  \framesubtitle{Energy}
-  
-  Mobile device with low battery
-  
+  \frametitle{\subsecname}
+  \framesubtitle{Overview}
+  \begin{description}
+    \item[{\color{orange!95!black}Energy}] Mobile devices have a battery so limited energy\\
+      $\neq$ Green computing
+    \item[{\color{orange!95!black}Mobility}] Access, availability, etc.\\
+      Need a strong failure-tolerance system.\\
+      Service localisation ?
+    \item[{\color{orange!95!black}Heterogenity}] More than in the cloud.\\
+      \begin{itemize}
+        \item Devices: from a computer to a connected thermometer\\
+        \item Network: High-speed links in data center to wireless comunication
+        \item Applications: in real-time, lots of communication, lots of computing,
+      high memory needs, etc.
+      \end{itemize}
+  \end{description}
 \end{frame}
+
 \begin{frame}
-  \frametitle{Challenges}
-  \framesubtitle{Computing power}
-  
-  Increasing
-  
-\end{frame}
-\begin{frame}
-  \frametitle{Challenges}
-  \framesubtitle{Mobility}
-  
-  Mobile things. Failure-tolerence must be high.
-  
-  Where to put the service in the edge?
-  
-\end{frame}
-\begin{frame}
-  \frametitle{Challenges}
-  \framesubtitle{Heterogenity}
-  
-  Of the network and things' abilities.
-  
-	\begin{example}
-		Cellphone, Oven, radio, heater, computer, etc.
-	\end{example}
-  
-  Of the programming languages used by each.  
-  
-  Of the applications
-	\begin{example}
-		High CPU need, high memory need, quick communication, etc.
-	\end{example}
-  
+  \frametitle{\subsecname}
+  \framesubtitle{Overview}
+  \begin{description}
+    \item[{\color{orange!95!black}Programmability}] How to deploy an application on different architecture
+    \item[{\color{orange!95!black}Naming conventions}] IP Protocols can be heavy for small devices
+  \end{description}
 \end{frame}
 
 % \section{Current research studies}
@@ -234,7 +227,7 @@ ADD SCHEMA
   \framesubtitle{\subsecname}
 
   \begin{exampleblock}{Indoor 3D localization}
-    Smartphones gather data from the camera and accelerometer.\\
+    Smartphones gather data from the camera and accelerometer $\to$ \emph{Data Producer}.\\
     Computation can be done in the edge (latency) or in the core (reliability).
   \end{exampleblock}
 
