@@ -148,3 +148,15 @@
   }
 \end{center}
 }
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+    \usebeamerfont{title}\insertsectionhead\par%
+    \hskip-2pt %
+    \begin{tikzpicture}
+      \draw[line width=1pt,line cap=butt,color=orange!80] (0,0)--(0.8\linewidth,0);
+    \end{tikzpicture}
+  \vfill
+  \end{frame}
+}

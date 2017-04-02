@@ -19,13 +19,28 @@
   <defs
      id="defs4">
     <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4542"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4544"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#ef004c;stroke-width:1pt;stroke-opacity:1;fill:#ef004c;fill-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
        inkscape:isstock="true"
        style="overflow:visible"
        id="marker7236"
        refX="0.0"
        refY="0.0"
        orient="auto"
-       inkscape:stockid="TriangleOutM">
+       inkscape:stockid="TriangleOutM"
+       inkscape:collect="always">
       <path
          transform="scale(0.4)"
          style="fill-rule:evenodd;stroke:#fb8c02;stroke-width:1pt;stroke-opacity:1;fill:#fb8c02;fill-opacity:1"
@@ -190,7 +205,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.2262963"
-     inkscape:cx="235.65388"
+     inkscape:cx="410.83988"
      inkscape:cy="251.0299"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -209,7 +224,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -447,5 +462,21 @@
          id="tspan3504"
          x="417.51733"
          y="934.93567">2.Compute request</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ef004c;stroke-width:5.00000045;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker4542)"
+       d="m 616.49045,647.89243 -39.95771,77.46904"
+       id="path4260"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ef004c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="547.35223"
+       y="633.81085"
+       id="text3502-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3504-6"
+         x="547.35223"
+         y="633.81085">Data producer</tspan></text>
   </g>
 </svg>
