@@ -16,7 +16,7 @@
 % ----------------
 % - Introduction -
 % ----------------
-\section{Introduction}
+\section*{Introduction}
 \begin{frame}
 	\frametitle{\secname}
   \framesubtitle{Cloud model}
@@ -231,11 +231,16 @@
     Computation can be done in the edge (latency) or in the core (reliability).
   \end{exampleblock}
 
+  \begin{minipage}[l]{0.3\linewidth}
+    \begin{exampleblock}{Computation}
+      It is a computation intensive problem $\to$ need to be send to the core
+    \end{exampleblock}
+  \end{minipage}
+  \begin{minipage}[l]{0.65\linewidth}
   \begin{center}
   \includegraphics[scale=0.2]{indoor}
   \end{center}
-
-  
+  \end{minipage}
 
 \end{frame}
 
@@ -244,9 +249,13 @@
   \frametitle{\secname}
   \framesubtitle{\subsecname}
 
-  With the Internet of Things, and in general the huge increase in produced data, we can't assume that our network could handle that much.
+  \begin{alertblock}{Limit of the network}
+    The Internet of Things, the increase in produced data $\to$ Limit of the network capacity
+  \end{alertblock}
 
   \begin{exampleblock}{Smart Cities, Smart Homes}
+    One city in 2019 = 180PB of data per day (health, utility, transports, etc)\\
+    Need low latency for health emergency of public safety \\
     A lot of the produced data could be consumed locally. We could still use centralization (EXAMPLE)
   \end{exampleblock}
   
@@ -258,14 +267,23 @@
   \frametitle{\secname}
   \framesubtitle{\subsecname}
 
-  \begin{exampleblock}{Online Shopping}
-    We need a responsive user interface. We want centralized data.
-  \end{exampleblock}
-
   \begin{exampleblock}{Smart Traffic Light System}
-    We want centralized data to regulate traffic on a large scale.\\
-    We want low-latency response when dealing with local events (EXAMPLE).
+    Smart Traffic Lights (STL): equipped with speed sensors, pedestrians sensors, warning signs\\
+    Goals:
+    \begin{enumerate}
+      \item Accidents prevention
+      \item Maintenance of a steady flow of traffic
+      \item Collect data to improve the system
+    \end{enumerate}
   \end{exampleblock}
+  
+  \begin{block}{Needs}
+    \begin{enumerate}
+      \item real-time, local
+      \item near real-time
+      \item storage of data for later analysis
+    \end{enumerate}
+  \end{block}
   
 \end{frame}
 
@@ -275,17 +293,29 @@
   \framesubtitle{\subsecname}
 
   \begin{exampleblock}{Video Surveillance}
-    For instance, to find a missing child, we need fast video analysis.\\
-    Exploits locality.
+    Goal: Find a missing child using all filming devices availables\\
+    Problem: The huge amount of data cannot be send to the core without latency\\
+    Idea: Pre-process it at the edge
   \end{exampleblock}
+  
+  \begin{alertblock}{Issues}
+    When is it better to preprocess than to send?
+  \end{alertblock}
 
+\end{frame}
+
+\begin{frame}
+  \frametitle{\secname}
+  \framesubtitle{\subsecname}
   \begin{alertblock}{Programmability}
     If we want our application to run on nodes, edge servers, could datacenters...\\
-    We need a suitable API.
+    We need a suitable API.\\
+    Problem: High heterogenity of the devices
   \end{alertblock}
 
   \begin{alertblock}{Workload Distribution}
-    We are using heterogeneous and mobile ressources for computation.
+    We are using heterogeneous and mobile ressources for computation.\\
+    Problem: How to assign the tasks?
   \end{alertblock}
   
 \end{frame}
@@ -297,16 +327,42 @@
   \framesubtitle{\subsecname}
 
   \begin{exampleblock}{On-demand Gaming}
-    The service needs low-latency. Cloud servers could only cover less than 75\% of the US population.
+    The service needs low-latency.\\
+    Cloud servers could only cover less than 75\% of the US population.\\
+    Edge only (service placed on CDN) give the same result with 400 edge-sites of five servers.\\
+    Need an hybrid system
   \end{exampleblock}
 
-  \begin{alertblock}{Heuristics for a better coverage}
-    We need the most efficient way to put edge servers.
-  \end{alertblock}
+  \begin{minipage}[l]{0.45\linewidth}
+    \begin{alertblock}{Heuristics for a better coverage}
+      We need the most efficient way to put edge servers.\\
+      It is a NP-hard problem.
+    \end{alertblock}
+  \end{minipage}
+  \begin{minipage}[l]{0.5\linewidth}
+  \begin{center}
+  \includegraphics[width=\linewidth]{coverage}
+  \end{center}
+  \end{minipage}
   
 \end{frame}
 
+\begin{frame}
+  \frametitle{\secname}
+  \framesubtitle{\subsecname}
 
+  \begin{exampleblock}{Heuristics for a better coverage}
+    \begin{itemize}
+      \item Random: Part of the CND are randomly assign the job of content distribution servers (called smart edges)
+      \item Population: The smart edges are spread according to population
+      \item Region: Each geographical region must have at least $x$ smart edges.
+      \item Vote for closest latency
+      \item Vote for all: a server vote for the $n$ servers with less than $x$ ms of latency. Weight of the vote is $1/n$
+    \end{itemize}
+    Results: Practically no improvement bring by the heuristics compared to the random strategy
+  \end{exampleblock}
+  
+\end{frame}
 
 \begin{frame}{Other Research studies} % I don't really like this name. any suggestion?
   
@@ -324,7 +380,7 @@
 
 
 
-\section{Conclusion}
+\section*{Conclusion}
 
 \begin{frame}
   \frametitle{Conclusion}
