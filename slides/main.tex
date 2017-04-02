@@ -6,7 +6,7 @@
 
 \begin{document}
 \title{Edge Cloud Computing}
-\subtitle{CBD}
+\subtitle{Bringing the Cloud to the Edge}
 \author{Aurèle BARRIÈRE & Solène MIRLIAZ}
 
 \begin{frame}[plain]
@@ -18,8 +18,59 @@
 % ----------------
 \section{Introduction}
 \begin{frame}
-	\frametitle{Introduction}
-
+	\frametitle{\secname}
+  \framesubtitle{Cloud model}
+  \begin{center}
+    \includegraphics[width=0.7\linewidth]{cloud.eps}
+  \end{center}
+  \begin{block}{Principle}
+    Optimize ressource usage
+  \end{block}
+\end{frame}
+\begin{frame}
+	\frametitle{\secname}
+  \framesubtitle{Cloud limits}
+  \begin{minipage}[l]{0.6\linewidth}
+  \begin{block}{Internet of things}
+    Growth of the number of connected objects and sensors that generate data.
+    The end nodes are evolving from consumers to producers.
+    
+    Estimated produced data by 2019: \emph{500 zettabytes} {\tiny (estimate by Cisco Global Cloud Index)}.
+  \end{block}
+  \end{minipage}
+  \begin{minipage}[l]{0.3\linewidth}
+    \includegraphics[width=1.5\linewidth]{cloudlimits.eps}
+  \end{minipage}
+	\begin{alertblock}{Limits of the clouds}
+          \begin{itemize}
+            \item The network can't handle that much.\\
+              Estimated IP traffic by 2019: 10.4 zettabytes.
+            \item The Cloud's computation power can't handle that much.
+            \item For many uses, the Cloud introduces too much latency.
+            \item Centralization brings privacy issues.
+          \end{itemize}
+	\end{alertblock}
+\end{frame}
+\begin{frame}
+	\frametitle{\secname}
+  \framesubtitle{Fog model}
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{fog.eps}
+  \end{center}
+  \begin{block}{Principle}
+    More little clouds, closer to the devices $\to$ Spread the ressources\\
+    Lower latency
+  \end{block}
+\end{frame}
+\begin{frame}
+	\frametitle{\secname}
+  \framesubtitle{Edge model}
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{edge.eps}
+  \end{center}
+  \begin{block}{Principle}
+    More computation done on the devices, more communication between close devices.
+  \end{block}
 \end{frame}
 
   \begin{frame}
@@ -29,34 +80,13 @@
   
   
 \section{Edge computing challenges}
-\subsection{A new model will be needed}
-\begin{frame}
-  \frametitle{\subsecname}
-  \begin{block}{Internet of things}
-    Growth of the number of connected objects and sensors that generate data.
-    The end nodes are evolving from consumers to producers.
-    
-    Estimated produced data by 2019: 500 zettabytes (estimate by Cisco Global Cloud Index).
-  \end{block}
-	\begin{alertblock}{Limits of the clouds}
-          \begin{itemize}
-          \item The network can't handle that much.\\
-              Estimated IP traffic by 2019: 10.4 zettabytes.
-            \item The Cloud's computation power can't handle that much.
-	    \item For many uses, the Cloud introduces too much latency.
-            \item Centralization brings privacy issues.
-          \end{itemize}
-	\end{alertblock}
-
-\end{frame}
-
 \subsection{Bringing the cloud to the Edge: an hybrid system} %I'm not sure this is a good phrasing. maybe some of the papers we read would disagree
 \begin{frame}
   \frametitle{Edge computing}
   \framesubtitle{Principle}
 
   \begin{block}{Computing in the Edge}
-    Increase in the nodes' computing power as well (smartphones, embedded devices).
+    Increase in the nodes' computing power (smartphones, embedded devices).
   \end{block}
    We want to put computing at the proximity of data sources: at the Edge.
 
@@ -94,7 +124,13 @@
 \frametitle{Edge-Cloud Computing}
 \framesubtitle{Overview}
 
-ADD SCHEMA
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{edgePrinciple.eps}
+  \end{center}
+  
+  \begin{alertblock}{Hybrid System}
+    No suppression of the cloud
+  \end{alertblock}
 
 \end{frame}
 
@@ -103,45 +139,31 @@ ADD SCHEMA
 % the challenges and research interests are almost the same to me
 
 \begin{frame}
-  \frametitle{Challenges}
-  \framesubtitle{Energy}
-  
-  Mobile device with low battery
-  
+  \frametitle{\subsecname}
+  \framesubtitle{Overview}
+  \begin{description}
+    \item[{\color{orange!95!black}Energy}] Mobile devices have a battery so limited energy\\
+      $\neq$ Green computing
+    \item[{\color{orange!95!black}Mobility}] Access, availability, etc.\\
+      Need a strong failure-tolerance system.\\
+      Service localisation ?
+    \item[{\color{orange!95!black}Heterogenity}] More than in the cloud.\\
+      \begin{itemize}
+        \item Devices: from a computer to a connected thermometer\\
+        \item Network: High-speed links in data center to wireless comunication
+        \item Applications: in real-time, lots of communication, lots of computing,
+      high memory needs, etc.
+      \end{itemize}
+  \end{description}
 \end{frame}
+
 \begin{frame}
-  \frametitle{Challenges}
-  \framesubtitle{Computing power}
-  
-  Increasing
-  
-\end{frame}
-\begin{frame}
-  \frametitle{Challenges}
-  \framesubtitle{Mobility}
-  
-  Mobile things. Failure-tolerence must be high.
-  
-  Where to put the service in the edge?
-  
-\end{frame}
-\begin{frame}
-  \frametitle{Challenges}
-  \framesubtitle{Heterogenity}
-  
-  Of the network and things' abilities.
-  
-	\begin{example}
-		Cellphone, Oven, radio, heater, computer, etc.
-	\end{example}
-  
-  Of the programming languages used by each.  
-  
-  Of the applications
-	\begin{example}
-		High CPU need, high memory need, quick communication, etc.
-	\end{example}
-  
+  \frametitle{\subsecname}
+  \framesubtitle{Overview}
+  \begin{description}
+    \item[{\color{orange!95!black}Programmability}] How to deploy an application on different architecture
+    \item[{\color{orange!95!black}Naming conventions}] IP Protocols can be heavy for small devices
+  \end{description}
 \end{frame}
 
 % \section{Current research studies}
@@ -205,7 +227,7 @@ ADD SCHEMA
   \framesubtitle{\subsecname}
 
   \begin{exampleblock}{Indoor 3D localization}
-    Smartphones gather data from the camera and accelerometer.\\
+    Smartphones gather data from the camera and accelerometer $\to$ \emph{Data Producer}.\\
     Computation can be done in the edge (latency) or in the core (reliability).
   \end{exampleblock}
 
