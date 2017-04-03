@@ -160,3 +160,8 @@
   \vfill
   \end{frame}
 }
+
+\setbeamertemplate{bibliography item}[triangle]
+\setbeamercolor{bibliography entry author}{fg=gray}
+\setbeamercolor{bibliography entry title}{fg=red} 
+\setbeamercolor{bibliography entry location}{fg=lightgray}
