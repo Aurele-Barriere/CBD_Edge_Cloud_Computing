@@ -24,7 +24,7 @@
     \includegraphics[width=0.7\linewidth]{cloud.eps}
   \end{center}
   \begin{block}{Principle}
-    Optimize ressource usage
+    Optimize resource usage
   \end{block}
 \end{frame}
 \begin{frame}
@@ -58,7 +58,7 @@
     \includegraphics[width=0.6\linewidth]{fog.eps}
   \end{center}
   \begin{block}{Principle}
-    More little clouds, closer to the devices $\to$ Spread the ressources\\
+    More little clouds, closer to the devices $\to$ Spread the resources\\
     Lower latency
   \end{block}
 \end{frame}
@@ -93,7 +93,7 @@
    It could either be in the nodes themselves, or in smaller edge servers. We can use already existing CDNs to put such servers.
   
    \begin{exampleblock}{Example: Smart Home}
-     In a smart home, the data produced by every sensor could be consumed directly without sending it to a datacenter.
+     In a smart home, the data produced by every sensor could be consumed directly without sending it to a data center.
    \end{exampleblock}
 
 \end{frame}
@@ -146,11 +146,11 @@
       $\neq$ Green computing
     \item[{\color{orange!95!black}Mobility}] Access, availability, etc.\\
       Need a strong failure-tolerance system.\\
-      Service localisation ?
-    \item[{\color{orange!95!black}Heterogenity}] More than in the cloud.\\
+      Service localization ?
+    \item[{\color{orange!95!black}Heterogeneity}] More than in the cloud.\\
       \begin{itemize}
         \item Devices: from a computer to a connected thermometer\\
-        \item Network: High-speed links in data center to wireless comunication
+        \item Network: High-speed links in data center to wireless communication
         \item Applications: in real-time, lots of communication, lots of computing,
       high memory needs, etc.
       \end{itemize}
@@ -233,7 +233,7 @@
 
   \begin{minipage}[l]{0.3\linewidth}
     \begin{exampleblock}{Computation}
-      It is a computation intensive problem $\to$ need to be send to the core
+      It is a computation intensive problem $\to$ needs to be sent to the core
     \end{exampleblock}
   \end{minipage}
   \begin{minipage}[l]{0.65\linewidth}
@@ -332,7 +332,7 @@
   \framesubtitle{\subsecname}
 
   \begin{exampleblock}{Video Surveillance}
-    Goal: Find a missing child using all filming devices availables\\
+    Goal: Find a missing child using all filming devices available\\
     Problem: The huge amount of data cannot be send to the core without latency\\
     Idea: Pre-process it at the edge
   \end{exampleblock}
@@ -347,13 +347,13 @@
   \frametitle{\secname}
   \framesubtitle{\subsecname}
   \begin{alertblock}{Programmability}
-    If we want our application to run on nodes, edge servers, could datacenters...\\
+    If we want our application to run on nodes, edge servers, could data centers...\\
     We need a suitable API.\\
-    Problem: High heterogenity of the devices
+    Problem: High heterogeneity of the devices
   \end{alertblock}
 
   \begin{alertblock}{Workload Distribution}
-    We are using heterogeneous and mobile ressources for computation.\\
+    We are using heterogeneous and mobile resources for computation.\\
     Problem: How to assign the tasks?
   \end{alertblock}
   
@@ -369,7 +369,7 @@
     The service needs low-latency.\\
     Cloud servers could only cover less than 75\% of the US population.\\
     Edge only (service placed on CDN) give the same result with 400 edge-sites of five servers.\\
-    Need an hybrid system
+    An hybrid system is needed.
   \end{exampleblock}
 
   \begin{minipage}[l]{0.45\linewidth}
@@ -392,13 +392,13 @@
 
   \begin{exampleblock}{Heuristics for a better coverage}
     \begin{itemize}
-      \item Random: Part of the CND are randomly assign the job of content distribution servers (called smart edges)
-      \item Population: The smart edges are spread according to population
+      \item Random: Part of the CDNs are randomly assigned the job of content distribution servers (called smart edges).
+      \item Population: The smart edges are spread according to population.
       \item Region: Each geographical region must have at least $x$ smart edges.
-      \item Vote for closest latency
-      \item Vote for all: a server vote for the $n$ servers with less than $x$ ms of latency. Weight of the vote is $1/n$
+      \item Vote for closest latency.
+      \item Vote for all: a server vote for the $n$ servers with less than $x$ ms of latency. Weight of the vote is $1/n$.
     \end{itemize}
-    Results: Practically no improvement bring by the heuristics compared to the random strategy
+    Results: Practically no improvement brought by the heuristics compared to the random strategy.
   \end{exampleblock}
   
 \end{frame}
@@ -429,7 +429,7 @@
   \end{block}
   
   \begin{alertblock}{Not a perfect solution}
-    In the case of coverage, any reasonnable number of edge servers still let some users without service for now.
+    In the case of coverage, any reasonable number of edge servers still let some users without service for now.
   \end{alertblock}
   
   \begin{alertblock}{There's still a lot of work left}
@@ -456,6 +456,16 @@
 \item When we need to analyze data at different time scales (Smart Traffic Light System, wind farm). 
 \end{itemize}
 \end{frame}
+
+
+\section{Bibliography}
+\begin{frame}{Bibliography}
+  \tiny
+  \nocite{*}
+  \bibliographystyle{apalike}
+  \bibliography{../bib/edge.bib}
+\end{frame}
+
 
 
 \end{document}
