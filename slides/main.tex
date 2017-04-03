@@ -8,6 +8,7 @@
 \title{Edge Cloud Computing}
 \subtitle{Bringing the Cloud to the Edge}
 \author{Aurèle BARRIÈRE & Solène MIRLIAZ}
+\date{05/04/2017}
 
 \begin{frame}[plain]
   \titlepage%
@@ -88,10 +89,11 @@
   \begin{block}{Computing in the Edge}
     Increase in the nodes' computing power (smartphones, embedded devices).
   \end{block}
+  \vfill
    We want to put computing at the proximity of data sources: at the Edge.
 
    It could either be in the nodes themselves, or in smaller edge servers. We can use already existing CDNs to put such servers.
-  
+  \vfill
    \begin{exampleblock}{Example: Smart Home}
      In a smart home, the data produced by every sensor could be consumed directly without sending it to a data center.
    \end{exampleblock}
@@ -111,7 +113,7 @@
   The Cloud keeps providing global services, but edge servers can compute with lower latency.
 
   We can then use advantages from both the Cloud and the Edge.
-  
+  \vfill
   \begin{exampleblock}{Online Shopping}
     We need a responsive user interface. We want centralized data.\\
     The shopping cart should be located in the edge.\\
@@ -252,7 +254,7 @@
   \begin{alertblock}{Limit of the network}
     The Internet of Things, the increase in produced data $\to$ Limit of the network capacity
   \end{alertblock}
-
+  \vfill
   \begin{exampleblock}{Smart Cities, Smart Homes}
     One city in 2019 = 180PB of data per day (health, utility, transports, etc)\\
     Need low latency for health emergency of public safety \\
@@ -274,8 +276,7 @@
     The shopping cart should be located in the edge.\\
     Synchronization in the background.
   \end{exampleblock}
-
-
+  \vfill
   \begin{exampleblock}{Smart Traffic Light System}
     We want centralized data to regulate traffic on a large scale.\\
     We want low-latency response when dealing with local events.
@@ -336,7 +337,7 @@
     Problem: The huge amount of data cannot be send to the core without latency\\
     Idea: Pre-process it at the edge
   \end{exampleblock}
-  
+  \vfill
   \begin{alertblock}{Issues}
     When is it better to preprocess than to send?
   \end{alertblock}
@@ -351,7 +352,7 @@
     We need a suitable API.\\
     Problem: High heterogeneity of the devices
   \end{alertblock}
-
+  \vfill
   \begin{alertblock}{Workload Distribution}
     We are using heterogeneous and mobile resources for computation.\\
     Problem: How to assign the tasks?
@@ -408,7 +409,7 @@
   \begin{alertblock}{Privacy}
     Some data cannot be sent to anyone (Electronic Medical Records).
   \end{alertblock}
-
+  \vfill
   \begin{alertblock}{Naming Conventions}
     IP protocol isn't suited for the mobility of end nodes devices.
   \end{alertblock}
@@ -427,11 +428,11 @@
   \begin{block}{An hybrid system is needed}
     For some applications, neither cloud-only nor edge-only systems are sufficient.
   \end{block}
-  
+  \vfill
   \begin{alertblock}{Not a perfect solution}
     In the case of coverage, any reasonable number of edge servers still let some users without service for now.
   \end{alertblock}
-  
+  \vfill
   \begin{alertblock}{There's still a lot of work left}
     \begin{itemize}
       \item Lots of open issues
