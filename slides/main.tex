@@ -87,12 +87,10 @@
   \framesubtitle{Principle}
 
   \begin{block}{Computing in the Edge}
-    Increase in the nodes' computing power (smartphones, embedded devices).
+   We want to put computing at the proximity of data sources: at the Edge.
   \end{block}
   \vfill
-   We want to put computing at the proximity of data sources: at the Edge.
-
-   It could either be in the nodes themselves, or in smaller edge servers. We can use already existing CDNs to put such servers.
+  Edge: the devices, small edge servers or existing CDNs
   \vfill
    \begin{exampleblock}{Example: Smart Home}
      In a smart home, the data produced by every sensor could be consumed directly without sending it to a data center.
@@ -101,37 +99,15 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Edge-Cloud computing}
-  \framesubtitle{An hybrid system}
-
-%  \begin{figure}
-%    \center
-%    \includegraphics[scale=0.5]{edge.png}  %I'm not a big fan of this graphic. might have to change it.
-%  \end{figure}
-%
-  Keep using the Cloud (core), but add computation at the Edge.
-  The Cloud keeps providing global services, but edge servers can compute with lower latency.
-
-  We can then use advantages from both the Cloud and the Edge.
-  \vfill
-  \begin{exampleblock}{Online Shopping}
-    We need a responsive user interface. We want centralized data.\\
-    The shopping cart should be located in the edge.\\
-    Synchronization with the cloud in the background.
-  \end{exampleblock}
-  
-\end{frame}
-
-\begin{frame}
 \frametitle{Edge-Cloud Computing}
-\framesubtitle{Overview}
+\framesubtitle{Hybrid system}
 
   \begin{center}
     \includegraphics[width=0.6\linewidth]{edgePrinciple.eps}
   \end{center}
   
   \begin{alertblock}{Hybrid System}
-    No suppression of the cloud
+    Keep the cloud
   \end{alertblock}
 
 \end{frame}
@@ -156,15 +132,6 @@
         \item Applications: in real-time, lots of communication, lots of computing,
       high memory needs, etc.
       \end{itemize}
-  \end{description}
-\end{frame}
-
-\begin{frame}
-  \frametitle{\subsecname}
-  \framesubtitle{Overview}
-  \begin{description}
-    \item[{\color{orange!95!black}Programmability}] How to deploy an application on different architecture
-    \item[{\color{orange!95!black}Naming conventions}] IP Protocols can be heavy for small devices
   \end{description}
 \end{frame}
 
